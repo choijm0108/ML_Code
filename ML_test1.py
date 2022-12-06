@@ -4,6 +4,8 @@ from goolge.colab import files
 
 uploaded = files.upload()
 
+import pandas as pd
+
 for fn in uploaded.keys() :
     print('user uploaded file "{name}"" with length {length} bytes'.format(
         name=fn, length = len(uploaded[fn])))
